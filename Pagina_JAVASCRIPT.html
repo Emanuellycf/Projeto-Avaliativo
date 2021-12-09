@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<center>
+	<img src="imgjava.png">
+	<h1>
+	O que é javaScript?
+	</h1>
+	<h2>
+		JavaScript é uma linguagem de programação interpretada estruturada, de script em alto nível com tipagem dinâmica fraca e multiparadigma. Juntamente com HTML e CSS, o JavaScript é uma das três principais tecnologias da World Wide Web.
+	</h2>
+	<h1>
+	Informações sobre o javaScript
+	</h1>
+	<h3>
+		
+<p>JavaScript é uma linguagem de programação criada em 1995 por Brendan Eich enquanto trabalhava na Netscape Communications Corporation. Originalmente projetada para rodar no Netscape Navigator, ela tinha o propósito de oferecer aos desenvolvedores formas de tornar determinados processos de páginas web mais dinâmicos, tornando seu uso mais agradável. Um ano depois de seu lançamento, a Microsoft portou a linguagem para seu navegador, o que ajudou a consolidar a linguagem e torná-la uma das tecnologias mais importantes e utilizadas na internet.</p>
+
+<p>Embora ela tenha esse nome, não se deve confundir JavaScript com Java, linguagem de programação desenvolvida pela Sun Microsystems: antes, a linguagem criada pela Netscape recebera nomes como LiveScript e Mocha, mas, para aproveitar o grande sucesso da linguagem da Sun no mercado, os executivos da Netscape resolveram mudar o nome de sua linguagem para o atual. Entretanto, Java e Java Script são completamente diferentes e possuem propósitos diversos.</p>
+<img src="explicajava.png">
+
+	</h3>
+	<h2>
+Objeto, noções básicas
+	</h2>
+	<h3>
+		Um objeto é uma coleção de dados e/ou funcionalidades relacionadas (que geralmente consistem em diversas variáveis e funções — que são chamadas de propriedades e métodos quando estão dentro de objetos). Vamos trabalhar com um exemplo para entender como eles são.
+
+<p>Para começar, faça uma cópia do nosso arquivo oojs.html. Isto contém muito pouco — um elemento < script> para escrevermos nosso código-fonte. Vamos usar isto como base para explorar a sintaxe básica do objeto. Ao trabalhar com este exemplo, você deve ter seu console de ferramentas de desenvolvedor JavaScript aberto e pronto para digitar alguns comandos.</p>
+
+Como acontece com muitas coisas em JavaScript, a criação de um objeto geralmente começa com a definição e a inicialização de uma variável. Tente digitar o código a seguir no arquivo que você baixou, salve e atualize:
+
+<p>var pessoa = {};</p>
+Copy to Clipboard
+Se você inserir pessoa no seu console JS e pressionar o botão, deverá obter o seguinte resultado:
+
+<p>[object Object]</p>
+Copy to Clipboard
+Parabéns, você acabou de criar seu primeiro objeto. Tarefa concluída! Mas este é um objeto vazio, então não podemos fazer muita coisa com isso. Vamos atualizar nosso objeto para ficar assim:
+
+<p>var pessoa = {</p>
+  <p>nome: ['Bob', 'Smith'],
+  idade: 32,
+  sexo: 'masculino',
+  interesses: ['música', 'esquiar'],
+  bio: function() {</p>
+    <p>alert(this.nome[0] + ' ' + this.nome[1] + ' tem ' + this.idade + ' anos de idade. Ele gosta de ' + this.interesses[0] + ' e ' + this.interesses[1] + '.');
+  },</p>
+ <p> saudacao: function() {
+    alert('Oi! Eu sou ' + this.nome[0] + '.');
+  }
+};
+Copy to Clipboard</p>
+Depois de salvar e atualizar, tente inserir alguns dos itens a seguir no console JavaScript no devtools do seu navegador:
+
+<p>pessoa.nome</p>
+<p>pessoa.nome[0]</p>
+<p>pessoa.idade</p>
+<p>pessoa.interesses[1]</p>
+<p>pessoa.bio()</p>
+<p>pessoa.saudacao()</p>
+<p>Copy to Clipboard</p>
+Agora você tem alguns dados e funcionalidades dentro de seu objeto e é capaz de acessá-los com uma sintaxe simples e agradável!
+	</h3>
+</center>
+<link rel="stylesheet" type="text/css" href="fundoCSS3.css">
+	<title></title>
+</head>
+<body>
+
+</body>
+</html>
